@@ -1,0 +1,450 @@
+/* Base Styles */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #111;
+  background: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a1a2f;
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom right, #0a1a2f, #223a5e);
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.episode-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Spotify Section */
+.spotify-section {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.spotify-section h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.spotify-embed {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+}
+
+@media (max-width: 600px) {
+  .spotify-section h2 {
+    font-size: 20px;
+  }
+}
+
+/* Episodes Section */
+.episodes {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+}
+.episodes h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.episode-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.episode-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.episode-card img {
+  width: 100%;
+  height: auto;
+}
+.episode-card h3 {
+  font-size: 1.1rem;
+  margin: 1rem;
+}
+.episode-card p {
+  margin: 0 1rem 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background: #0a1a2f;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.footer .social-icons {
+  margin-top: 1rem;
+}
+.footer .social-icons a {
+  margin: 0 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+}
+.footer .social-icons a:hover {
+  color: #1db954;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .episode-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Base Styles */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #111;
+  background: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a1a2f;
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to bottom right, #0a1a2f, #223a5e);
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+/* Mission and Vision */
+.mission-vision {
+  padding: 3rem 2rem;
+  background-color: #f5f5f5;
+}
+.mv-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.mv-block {
+  margin-bottom: 2rem;
+}
+.mv-block h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.mv-block p {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Team Members */
+.team {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.member-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 250px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.member-card img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.member-card h3 {
+  margin: 0.8rem 0 0.3rem;
+}
+.member-card p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.footer {
+  background: #0a1a2f;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.footer .social-icons {
+  margin-top: 1rem;
+}
+.footer .social-icons a {
+  margin: 0 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+}
+.footer .social-icons a:hover {
+  color: #1db954;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Episodes Page Styling */
+.episodes-hero {
+  background: linear-gradient(to right, #001F3F, #003366);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.episode-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.category-btn {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.category-btn:hover {
+  background-color: #002244;
+}
+
+/* Episode Cards */
+.episodes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* space between cards */
+  padding: 2rem;
+}
+
+.episode-card {
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.episode-card:hover {
+  transform: translateY(-5px);
+}
+
+.episode-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+.pagination button {
+  background-color: #ddd;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pagination button.active {
+  background-color: #003366;
+  color: white;
+}
+.pagination button:hover {
+  background-color: #bbb;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guest Episodes - Beyond All Headlines</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Beyond All Headlines</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Episodes</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero episodes-hero">
+    <div class="hero-text">
+      <h1>Guest Episodes</h1>
+      <p>Expert voices. Deep dives. Global perspectives from outside the studio.</p>
+    </div>
+  </section>
+
+  <!-- Episodes Grid -->
+  <section class="episodes-grid">
+    <div class="episode-card">
+      <img src="https://i.scdn.co/image/ab67656300005f1f26fdfeb6a4e8a94cde416cfa" alt="Guest Episode 1">
+      <h3>Guest Talk: Human Rights in Conflict Zones</h3>
+      <p>With Professor Jane Lin — A critical perspective on aid, justice, and media coverage.</p>
+    </div>
+    <!-- Add more guest cards here -->
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Beyond All Headlines. All rights reserved.</p>
+      <p>Follow us on social media</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-spotify"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
