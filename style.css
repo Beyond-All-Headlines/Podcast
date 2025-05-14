@@ -251,6 +251,7 @@ body {
 .mv-block p {
   font-size: 1.5rem;
   color: #333;
+  text-align: left;
 }
 
 /* Team Members */
