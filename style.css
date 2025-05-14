@@ -448,3 +448,21 @@ body {
 </body>
 </html>
 
+.button {
+  background-color: #002c5f; /* or #0a2540 for deeper blue */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+}
+
+.button:hover {
+  background-color: #001f4d;
+}
+
