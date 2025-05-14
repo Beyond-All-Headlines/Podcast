@@ -230,6 +230,7 @@ body {
 }
 .mv-block {
   margin-bottom: 2rem;
+  text-align: center;
 }
 .mv-block h2 {
   font-size: 1.8rem;
