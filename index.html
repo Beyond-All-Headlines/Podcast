@@ -25,14 +25,15 @@
 
   <!-- Hero Section -->
 <!-- Hero Section -->
+<!-- HERO SECTION -->
 <style>
   .hero {
     position: relative;
-    background-image: url('https://i.ibb.co/xSQ4kjsP/BAH-In-action.webp'); /* your direct image link */
+    background-image: url('https://i.ibb.co/xSQ4kjsP/BAH-In-action.webp'); /* Your image URL */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh; /* Adjust height if needed */
+    height: 50vh; /* smaller height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,11 +43,9 @@
   .hero::before {
     content: '';
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(0, 0, 0, 0.5); /* full image tint */
+    z-index: 0;
   }
 
   .hero-overlay {
@@ -59,18 +58,20 @@
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    display: block;
   }
 
   .hero-subtitle {
     font-size: 1.5rem;
     font-weight: 300;
+    display: block;
   }
 </style>
 
 <section class="hero">
   <div class="hero-overlay">
-    <h1 class="hero-title">Beyond All Headlines</h1>
-    <p class="hero-subtitle">Cutting the noise</p>
+    <span class="hero-title">Beyond All Headlines</span>
+    <span class="hero-subtitle">Cutting the noise</span>
   </div>
 </section>
 
