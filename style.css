@@ -81,6 +81,32 @@ body {
   display: block;
 }
 
+.hero {
+  background-color: #0A1A2F; /* Same as your navbar background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.hero-tagline {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 300;
+}
+
 /* Spotify Section */
 .spotify-section {
   padding: 40px 20px;
