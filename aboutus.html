@@ -24,11 +24,53 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero about-hero">
-    <div class="hero-text">
-      <h1>About Us</h1>
-    </div>
-  </section>
+ <style>
+  .hero {
+    position: relative;
+    background-image: url('https://i.ibb.co/xSQ4kjsP/BAH-In-action.webp'); /* Your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh; /* smaller height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(0, 0, 0, 0.5); /* full image tint */
+    z-index: 0;
+  }
+
+  .hero-overlay {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: block;
+  }
+</style>
+
+<section class="hero">
+  <div class="hero-overlay">
+    <span class="hero-title">About Us</span>
+  </div>
+</section>
 
   <!-- Mission and Vision -->
   <section class="mission-vision">
