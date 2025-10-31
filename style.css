@@ -375,16 +375,32 @@ body {
   margin: 0.5rem 0;
 }
 
+.footer {
+  background-color: #0b1b33;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+}
+
 .social-links a {
-  color: #ffffff;
+  color: #ffffff; /* Always white */
   text-decoration: none;
   font-weight: 500;
   margin: 0 0.5rem;
-  transition: color 0.3s;
+  transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #1db954; /* Spotify green on hover, looks great with navy */
+  text-decoration: underline; /* Underline instead of color change */
+}
+
+.social-links a:visited,
+.social-links a:active {
+  color: #ffffff; /* Keep white even after clicking */
 }
 
 /* Responsive */
